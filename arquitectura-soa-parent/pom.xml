@@ -5,7 +5,7 @@
 	<artifactId>arquitectura-soa-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
+
 	<modules>
 		<module>../arquitectura-soa-inter-local</module>
 		<module>../arquitectura-soa-inter-query</module>
@@ -14,5 +14,7 @@
 		<module>../arquitectura-soa</module>
 		<module>../arquitectura-web-primefaces</module>
 		<module>../arquitectura-web-primefaces2</module>
+		<module>../arquitectura-ear-all</module>
+		<module>../arquitectura-ear-remote</module>
 	</modules>
 </project>

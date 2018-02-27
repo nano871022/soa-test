@@ -20,4 +20,10 @@ public class Servicios implements IServicio, IServicioRemoto {
 		return "Coneccion por local"+user+" ; "+pass;
 	}
 
+	@Override
+	public String statement(String sql) throws Exception {
+		return query.query(sql);
+	}
+	
+
 }

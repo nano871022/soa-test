@@ -11,7 +11,6 @@ import co.com.arquitectura.soa.interfaces.query.IQuery;
 public class PaginaBean {
 
 	private String valor;
-//	@Resource(lookup="java:global/Ear-prime/arquitectura-soa/Servicios!co.com.arquitectura.soa.interfaces.local.IServicio")
 	@EJB
 	private IServicio servicio;
 	@EJB
@@ -37,6 +36,14 @@ public class PaginaBean {
 			e.printStackTrace();
 		}
 		return "Error";
+	}
+	public String getStatement() {
+		try {
+			return servicio.statement("select  1");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "error";
 	}
 	public String getValor() {
 		return valor;

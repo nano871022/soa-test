@@ -8,9 +8,9 @@ import co.com.arquitectura.soa.interfaces.remoto.IServicioRemoto;
 @ManagedBean(name="paginaBean")
 @ViewScoped
 public class PaginaBean {
-
 	private String valor;
-	@EJB(lookup="java:jboss/exported/Ear-prime/arquitectura-soa/Servicios!co.com.arquitectura.soa.interfaces.remoto.IServicioRemoto")
+//	@EJB(lookup="java:jboss/exported/Ear-prime/arquitectura-soa/Servicios!co.com.arquitectura.soa.interfaces.remoto.IServicioRemoto")
+	@EJB(lookup="java:jboss/exported/arquitectura-ear-all-0.0.1-SNAPSHOT/arquitectura-soa-0.0.1-SNAPSHOT/Servicios!co.com.arquitectura.soa.interfaces.remoto.IServicioRemoto")
 	private IServicioRemoto servicio;
 	
 
